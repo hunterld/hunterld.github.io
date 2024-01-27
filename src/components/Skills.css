@@ -1,0 +1,88 @@
+.skills-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #f5f5f5;
+  }
+  
+  .skills-container h2 {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .skills-container p {
+    color: #666;
+  }
+  
+  .technologies {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-content: center; /* This centers the grid items horizontally */
+    align-items: center; /* This centers the grid items vertically */
+    margin: 0 auto; /* This centers the entire grid container */
+    padding: 0; /* Ensure there's no additional padding offsetting the grid */
+    max-width: 1200px; /* Set a max-width if you want to limit the grid's expansion */
+  }
+  
+  .tech-icon {
+    display: flex; /* Use flexbox for centering the content of .tech-icon */
+    flex-direction: column;
+    align-items: center; /* Center children (img and p) horizontally */
+    justify-content: center; /* Center children vertically */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    /* Set a fixed size for the tech-icon container */
+    width: 120px; /* Adjust the width as necessary */
+    height: 120px; /* Adjust the height as necessary */
+  }
+  
+  .tech-icon img {
+    max-width: 100%; /* Image can be as wide as the container */
+    max-height: 80px; /* Limit the height of the image */
+    height: auto; /* Maintain the aspect ratio */
+  }
+  
+  .tech-icon p {
+    margin-top: 10px; /* Space between the image and the text */
+  }
+  
+  .tech-icon:hover {
+    transform: scale(1.1); /* Enlarge icons slightly on hover */
+  }
+  
+  /* Keyframes for the bounce animation */
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  /* Apply the bounce animation */
+  .tech-icon.bounce-on-scroll {
+    animation: bounce 1s ease;
+  }
+  
+  /* Media query for larger screens */
+  @media (min-width: 768px) {
+    .technologies {
+      grid-template-columns: repeat(5, 1fr); /* Maintain 3 columns on larger screens */
+    }
+  
+    .tech-icon {
+      width: 150px; /* Larger size for larger screens */
+      height: 150px; /* Larger size for larger screens */
+    }
+  
+    .tech-icon img {
+      max-height: 120px; /* Larger images for larger screens */
+    }
+  }
+  

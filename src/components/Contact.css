@@ -1,0 +1,72 @@
+.contact-container {
+    background-color: #0f182b; /* Same as Home page background */
+    color: white; /* If text color is white on the Home page */
+    padding: 40px;
+    min-height: 100vh; /* Adjust based on content */
+  }
+  
+  .contact-header h1 {
+    color: white;
+    font-size: 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contact-header p {
+    color: white;
+    font-size: 1.2em;
+  }
+  
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact-form .submit-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-info {
+    width: 40%;
+  }
+  
+  .contact-info p {
+    margin-bottom: 10px;
+  }
+  
+  .social-links {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    margin-right: 10px;
+  }
+  
+  .social-links img {
+    width: 30px; /* Adjust size as needed */
+  }
