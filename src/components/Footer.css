@@ -1,0 +1,14 @@
+.footer {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    margin-top: auto; /* Pushes the footer to the bottom */
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .footer p {
+    color: #333; /* Or any other color you prefer */
+    margin: 0; /* Removes default margins from the paragraph */
+  }

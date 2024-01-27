@@ -4,7 +4,8 @@ import './Projects.css';
 const projectsData = [
   {
     title: "Recipe Explorer",
-    description: "This is a description for Project One.",
+    description: "Recipe Explorer, powered by TheMealDB API, transforms home cooking by enabling users to find and create recipes with available ingredients. Ideal for home cooks and food lovers, it features advanced search, recipe saving/creating, sharing, recipe rating, dietary filters, and a shopping list generator.",
+    techstack: "Tech Stack: Python, Flask, PostgreSQL, SQLAlchemy ORM, Javascript, HTML, CSS",
     images: [
        `${process.env.PUBLIC_URL}/images/home.png`,
        `${process.env.PUBLIC_URL}/images/form.png`,
@@ -17,7 +18,7 @@ const projectsData = [
   },
   {
     title: "Memory Game",
-    description: "This is a description for Project Two.",
+    description: "A dynamic memory game that allows the user to match-a-gif. The game features a start button and keeps track of the number of card flips and best score.",
     images: [
        `${process.env.PUBLIC_URL}/images/gifHome.png`,
        `${process.env.PUBLIC_URL}/images/gifStart.png`,

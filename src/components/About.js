@@ -4,20 +4,25 @@ import './About.css';
 const About = () => {
   const images = [
     { src: '/images/personal/code.jpg', label: 'Coding' },
-    { src: '/images/personal/coffee.jpg', label: 'Drinking Coffee' },
+    { src: '/images/personal/coffee.jpg', label: 'Mmm...Coffee' },
     { src: '/images/personal/island.jpg', label: 'Favorite Place' },
-    { src: '/images/personal/dualmonitors.jpg', label: 'Coding' },
-    { src: '/images/personal/react.jpg', label: 'React' },
+    { src: '/images/personal/pets.png', label: 'My pets' },
+    { src: '/images/personal/tennis.jpg', label: 'Tennis Fan' },
     { src: '/images/personal/learning.jpg', label: 'Learning' },
     // ... more images if necessary
   ];
 
   return (
     <div className="about-section">
-      <div className="about-text">
-        <h2>About Me</h2>
-        <p>With a background in system analysis, I am transitioning into a software developer role to pursue my passiong for engineering.  I am dedicated to creating innovative solutions and constantly expanding my skills.</p>
-      </div>
+      <div className="about-text-container">
+        <div className="about-text">
+          <h2>About Me</h2>
+          <p>Greetings! I'm not your typical software developer. With over 14 years of experience as a system administrator, I've decided to embrace my true passion and embark on an exciting journey in software development. My journey has been fueled by a love for tennis, endless cups of coffee, island getaways, the warmth of my pets, and an insatiable thirst for coding and learning.</p>
+          <p>What truly sets my heart racing about software engineering is the boundless canvas for creativity and problem-solving. Whether it's designing responsive interfaces with React or crafting intricate server-side logic in Python, I'm constantly thrilled to tackle new challenges and redefine the possibilities of code.</p>
+          <p>I'm eager to contribute my skills and passion to a team that values innovation, quality, and a user-focused approach to software development. Let's connect and explore how we can collaborate to craft exceptional software solutions that shine in the digital landscape.</p>
+          <p></p>
+        </div>
+      </div>  
       <div className="about-images">
         {images.map((image, index) => (
           <div key={index} className="image-container">

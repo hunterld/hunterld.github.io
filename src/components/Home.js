@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
-import { Link } from 'react-router-dom';
 
 const jobTitles = ["Full Stack Developer", "Front End Developer", "Back End Developer"];
 
@@ -47,17 +46,23 @@ const Home = () => {
       
       <div className="socials-and-button-container">
         <div className="social-icons">
+          <a href="https://github.com/hunterld" target="_blank" rel="noopener noreferrer">
             <img src={`${process.env.PUBLIC_URL}/icons/github--v1.png`} alt="GitHub" />
+          </a>
+          <a href="https://linkedin.com/in/hunterld" target="_blank" rel="noopener noreferrer">
             <img src={`${process.env.PUBLIC_URL}/icons/linkedin--v2.png`} alt="LinkedIn" />
+          </a>
         </div>
         <div className="buttons-container">
-        <a href="#projects" className="btn projects-button">Projects</a>
-        <a href="#contact" className="btn contact-button">Contact Me</a>
+          <a href="#projects" className="btn projects-button">Projects</a>
+          <a href="#contact" className="btn contact-button">Contact Me</a>
         </div>
       </div>
 
       <div className="down-arrow-container">
-        <div className="down-arrow"></div>
+        <a href="#about">
+          <div className="down-arrow"></div>
+        </a>
       </div>
     </div>
   );

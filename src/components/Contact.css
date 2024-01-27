@@ -2,7 +2,8 @@
     background-color: #0f182b; /* Same as Home page background */
     color: white; /* If text color is white on the Home page */
     padding: 40px;
-    min-height: 100vh; /* Adjust based on content */
+    min-height: 100vh; 
+    padding: 50px 0;
   }
   
   .contact-header h1 {
@@ -13,11 +14,13 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-top: 20px;
   }
 
   .contact-header p {
     color: white;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    padding: 20px;
   }
   
   .contact-content {
@@ -30,6 +33,7 @@
     display: flex;
     flex-direction: column;
     width: 50%;
+    padding: 20px;
   }
   
   .contact-form input,
@@ -51,6 +55,7 @@
   
   .contact-info {
     width: 40%;
+    font-size: 1.5rem;
   }
   
   .contact-info p {
@@ -68,5 +73,6 @@
   }
   
   .social-links img {
-    width: 30px; /* Adjust size as needed */
+    width: 40px; 
+    margin: 0 5px; 
   }

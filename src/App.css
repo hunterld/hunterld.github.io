@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+/* Custom styles for navbar */
+.navbar {
+  background-color: transparent !important; /* Set the background to transparent or any color */
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #007bff; /* Color of the toggler icon */
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml, ..."); /* Update this with your custom SVG or keep Bootstrap's default */
+}
+
+/* Custom colors for navigation links */
+.nav-link {
+  color: #070bdd !important; /* Change the color of nav text */
+}
+
+/* Change nav link colors on hover */
+.nav-link:hover {
+  color: #0056b3 !important; /* Darker shade for hover effect */
+}
+
+/* Ensure that navbar sticks to the top */
+.navbar.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
